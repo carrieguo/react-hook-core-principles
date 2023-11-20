@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "name": "react-hook-core-principles",
+  "description": "react hook 复习, 手写代码实现reack hook原理",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.19.5",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.31",
+    "rollup": "^4.4.1",
+    "source-map-js": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrieguo/react-hook-core-principles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carrieguo/react-hook-core-principles/issues"
+  },
+  "homepage": "https://github.com/carrieguo/react-hook-core-principles#readme"
+}
