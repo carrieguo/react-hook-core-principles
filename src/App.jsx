@@ -1,3 +1,4 @@
+console.log(React)
 const { createRoot } = ReactDOM;
 const { useState, useReducer } = React;
 
