@@ -1,4 +1,4 @@
-console.log(React)
+console.log(React);
 const { createRoot } = ReactDOM;
 const { useState, useReducer } = React;
 
@@ -30,16 +30,18 @@ function App() {
         return count * payload;
       case "DIV":
         return count / payload;
+      default:
+        return count;
     }
   }
   const [count, dispatch] = useReducer(countReducer, 0);
   return (
     <div>
       <h2>{count}</h2>
-      <button onClick={dispatch("PLUS", 1)}>+</button>
-      <button onClick={dispatch("MINUS", 1)}>-</button>
-      <button onClick={dispatch("TIMES", 2)}>*</button>
-      <button onClick={dispatch("DIV", 2)}>/</button>
+      <button onClick={() => dispatch({ type: "PLUS", payload: 1 })}>+</button>
+      <button onClick={() => dispatch({ type: "MINUS", payload: 1 })}>-</button>
+      <button onClick={() => dispatch({ type: "TIMES", payload: 2 })}>*</button>
+      <button onClick={() => dispatch({ type: "DIV", payload: 2 })}>/</button>
     </div>
   );
 }
