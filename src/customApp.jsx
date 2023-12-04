@@ -30,7 +30,7 @@ function App() {
     // depArr => the Array of dependencies
     t = setInterval(() => {
       setSecond((second) => second + 1);
-    }, 10000);
+    }, 3000);
     //页面卸载时
     // componentWillUnmount
     return () => {
@@ -45,18 +45,22 @@ function App() {
   return (
     <div>
       {/* useState */}
-      <h1>{count}</h1>
+      
+      <h2>{count}</h2><i>setState普通传参</i>
       <button onClick={() => setCount(count + 1)}>+</button>
       <button onClick={() => setCount(count - 1)}>-</button>
-      <h1>{count2}</h1>
+      
+      <h2>{count2}</h2><i>setState函数传参</i>
       <button onClick={() => setCount2(count2 + 1)}>+</button>
       <button onClick={() => setCount2(count2=>count2 - 1)}>-</button>
       {/* useReducer */}
-      <h2>{count3}</h2>
+      
+      <h2>{count3}</h2><i>useReducer</i>
       <button onClick={() => dispatch({ type: "PLUS", payload: 1 })}>+</button>
       <button onClick={() => dispatch({ type: "MINUS", payload: 1 })}>-</button>
       {/* useEffect */}
-      <h2>{second}s</h2>
+      
+      <h2>{second}s</h2><i>useEffect</i>
     </div>
   );
 }

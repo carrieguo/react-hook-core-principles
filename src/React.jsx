@@ -28,7 +28,7 @@ function createStateSetter(stateIndex) {
 // setState执行，需要重新render组件，此时需要把stateIndex重置为0
 // 有疑问？为什么stateIndex重置为0要写在这里.答：重新render之前，将stateIndex初始化
 async function render() {
-  const App = (await import("./useState")).default;
+  const App = (await import("./customApp")).default;
   stateIndex = 0;
   effectIndex = 0
   root.render(<App />);
